@@ -4,7 +4,7 @@ Ext.define('GlossMobile.view.notes.ListView', {
     layout: 'fit',
     config: {
         iconCls: 'compose',
-        title: 'notes',
+        title: 'Notes',
         onItemDisclosure: Ext.emptyFn,
         items: [
             {

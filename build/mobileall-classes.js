@@ -41282,7 +41282,7 @@ Ext.define('GlossMobile.view.notes.ListView', {
     layout: 'fit',
     config: {
         iconCls: 'compose',
-        title: 'notes',
+        title: 'Notes',
         onItemDisclosure: Ext.emptyFn,
         items: [
             {
@@ -42224,7 +42224,6 @@ Ext.define("GlossMobile.controller.Navigation", {
                 var notetext = hasnote ? "Edit Note" : "Add Note";
                 var notedisable = hasnote ? true : false;
                 notebtn.setText(notetext);
-                notebtn.setDisabled(notedisable);
                 notebtn.setHandler(function() {
                     me.application.getController("Notes").loadnote(target,title,type);
                 });

@@ -118,7 +118,6 @@ Ext.define("GlossMobile.controller.Navigation", {
                 var notetext = hasnote ? "Edit Note" : "Add Note";
                 var notedisable = hasnote ? true : false;
                 notebtn.setText(notetext);
-                notebtn.setDisabled(notedisable);
                 notebtn.setHandler(function() {
                     me.application.getController("Notes").loadnote(target,title,type);
                 });
